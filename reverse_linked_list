@@ -58,10 +58,10 @@ def reverse(llist):
     curr = llist
     
     while (curr is not None):
-        nextt = curr.next
+        temp = curr.next
         curr.next = prev
         prev = curr
-        curr = nextt
+        curr = temp
     llist = prev
     
     return llist
